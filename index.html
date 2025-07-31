@@ -1,141 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-SJ522BNG5N"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-SJ522BNG5N");
-    </script>
-    <meta charset="utf-8" />
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <!-- 
-     This viewport works for phones with notches.
-     It's optimized for gestures by disabling global zoom.
-    -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.00001, viewport-fit=cover"
-    />
-    <title>Abdurrahman</title>
-    <meta
-      name="keywords"
-      content="Abdurrahman Yahaya Ahmad, Portfolio, Developer"
-    />
-    <meta name="description" content="Probably building something.." />
-    <style>
-      /**
-       * Extend the react-native-web reset:
-       * https://github.com/necolas/react-native-web/blob/master/packages/react-native-web/src/exports/StyleSheet/initialRules.js
-       */
-      html,
-      body,
-      #root {
-        width: 100%;
-        /* To smooth any scrolling behavior */
-        -webkit-overflow-scrolling: touch;
-        margin: 0px;
-        padding: 0px;
-        /* Allows content to fill the viewport and go beyond the bottom */
-        min-height: 100%;
-      }
-      #root {
-        flex-shrink: 0;
-        flex-basis: auto;
-        flex-grow: 1;
-        display: flex;
-        flex: 1;
-      }
-
-      html {
-        scroll-behavior: smooth;
-        /* Prevent text size change on orientation change https://gist.github.com/tfausak/2222823#file-ios-8-web-app-html-L138 */
-        -webkit-text-size-adjust: 100%;
-        height: calc(100% + env(safe-area-inset-top));
-      }
-
-      body {
-        display: flex;
-        /* Allows you to scroll below the viewport; default value is visible */
-        overflow-y: auto;
-        overscroll-behavior-y: none;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        -ms-overflow-style: scrollbar;
-      }
-      /* Enable for apps that support dark-theme */
-      /*@media (prefers-color-scheme: dark) {
-        body {
-          background-color: black;
-        }
-      }*/
-    </style>
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>abdurrahman yahaya ahmad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <body class="bg-black text-gray-100 font-sans px-6 py-10 max-w-3xl mx-auto">
+    <!-- Profile -->
+    <div class="flex items-center gap-4 mb-10">
+      <img
+        src="profile.jpg"
+        alt="profile photo"
+        class="w-16 h-16 rounded-full object-cover"
+      />
+      <div>
+        <h1 class="text-3xl font-semibold">abdurrahman</h1>
+        <p class="text-gray-400 text-sm">
+          hangzhou, china · studied robotics eng. @zust<br />building apps &
+          exploring new oppurtunities.
+        </p>
+      </div>
+    </div>
 
-  <body>
-    <!-- 
-      A generic no script element with a reload button and a message.
-      Feel free to customize this however you'd like.
-    -->
-    <noscript>
-      <form
-        action=""
-        style="
-          background-color: #fff;
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 9999;
-        "
-      >
-        <div
-          style="
-            font-size: 18px;
-            font-family: Helvetica, sans-serif;
-            line-height: 24px;
-            margin: 10%;
-            width: 80%;
-          "
-        >
-          <p>Oh no! It looks like JavaScript is not enabled in your browser.</p>
-          <p style="margin: 20px 0">
-            <button
-              type="submit"
-              style="
-                background-color: #4630eb;
-                border-radius: 100px;
-                border: none;
-                box-shadow: none;
-                color: #fff;
-                cursor: pointer;
-                font-weight: bold;
-                line-height: 20px;
-                padding: 6px 16px;
-              "
-            >
-              Reload
-            </button>
-          </p>
-        </div>
-      </form>
-    </noscript>
-    <!-- The root element for your Expo app. -->
-    <div id="root"></div>
-    <script
-      src="/bundles/web-ff1eeb65ccad5c2bf115c76074340378.js"
-      defer
-    ></script>
+    <!-- Now -->
+    <section class="mb-10">
+      <h2 class="uppercase text-sm text-gray-400 tracking-widest mb-4">
+        projects
+      </h2>
+      <ul class="space-y-3">
+        <li>
+          <a
+            href="https://focusminny.app"
+            class="text-blue-400 hover:underline"
+            target="_blank"
+            >focusminny</a
+          >
+          → a mobile focus companion app for work and study (ios & android),
+          with 500+ users and early revenue
+        </li>
+        <li>
+          <a
+            href="https://apps.apple.com/ng/app/uniiily/id6450959938
+Uniiily"
+            class="text-blue-400 hover:underline"
+            target="_blank"
+            >uniiily</a
+          >
+          → a student social app built with react native and aws amplify.
+          reached 300+ active users organically on one campus
+        </li>
+        <li>
+          <a
+            href="https://tokyo-test.com"
+            class="text-blue-400 hover:underline"
+            target="_blank"
+            >tokyotest</a
+          >
+          → japanese quiz app using gpt-4 + supabase, personalized jlpt grammar
+          practice
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/feed/update/urn:li:activity:6669030791332413440/"
+            class="text-blue-400 hover:underline"
+            target="_blank"
+            >covid19 ng</a
+          >
+          → built to help nigerians find nearby govt approved stores and order
+          directly during lockdown
+        </li>
+        <li>
+          <a href="#" class="text-blue-400 hover:underline">bmh</a> → booking
+          app for hairstylists built from client ui design, focused on clean ux
+          and reliability
+        </li>
+      </ul>
+    </section>
+
+    <!-- Awards -->
+    <section class="mb-10">
+      <h2 class="uppercase text-sm text-gray-400 tracking-widest mb-4">
+        awards
+      </h2>
+      <ul class="space-y-3">
+        <li>🎉 2nd prize – panda foreign student essay contest (2023)</li>
+        <li>
+          🏆 2nd prize – revolutionise venture capital hackathon (innonation
+          powerhouse, hangzhou)
+        </li>
+        <li>
+          📌 academic scholarships awarded during undergraduate and postgraduate
+          studies
+        </li>
+      </ul>
+    </section>
+
+    <!-- Past -->
+    <!-- <section class="mb-10">
+      <h2 class="uppercase text-sm text-gray-400 tracking-widest mb-4">
+        previously
+      </h2>
+      <ul class="space-y-3">
+        <li>founded a company in hangzhou, china</li>
+        <li>
+          built a personal rmb–naira rate calculator using bybit & gate.io p2p
+          data
+        </li>
+      </ul>
+    </section> -->
+
+    <!-- Contact -->
+    <section class="mb-6">
+      <h2 class="uppercase text-sm text-gray-400 tracking-widest mb-4">
+        contact
+      </h2>
+      <ul class="space-y-2">
+        <li>
+          <a
+            href="mailto:reachtoaym@gmail.com"
+            class="text-blue-400 hover:underline"
+            >email me</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/in/abdullmaraya"
+            class="text-blue-400 hover:underline"
+            >connect on linkedin</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://instagram.com/abdvmn"
+            class="text-blue-400 hover:underline"
+            >follow me on instagram</a
+          >
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
